@@ -1,0 +1,215 @@
+/* style.css - Desain Portofolio & Profil Akademik Dua Kolom */
+:root {
+    --primary-color: #1F4D3A;
+    --secondary-color: #F3C98B;
+    --accent-color: #C2571A;
+    --bg-color: #EAF2E3;
+    --card-bg: #FFFFFF;
+    --text-color: #25311F;
+    --border-color: #7FA38A;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.top-bar a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Kop Header Utama */
+.main-header {
+    background-color: var(--card-bg);
+    padding: 20px 40px;
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-brand h1 {
+    margin: 0;
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+.header-brand p {
+    margin: 5px 0 0;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Sticky Navbar */
+.sticky-nav {
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 12px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.sticky-nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sticky-nav a:hover, .sticky-nav a.active {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+/* Tata Letak Dua Kolom */
+.main-layout {
+    max-width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.content-column {
+    flex: 0 0 75%;
+    background-color: var(--card-bg);
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar-column {
+    flex: 0 0 23%;
+}
+
+/* Hero Banner */
+.hero-banner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #F4F9F0;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 5px solid var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    object-fit: cover;
+}
+
+/* Sidebar Box & Akordeon */
+.sidebar-box {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar-box h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 16px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.sidebar-box ul {
+    padding-left: 20px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.sidebar-box a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.sidebar-box a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+/* Tabel & Judul Section */
+h2.section-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.row-ganjil { background-color: #F4F9F0; }
+.row-genap { background-color: #FFFFFF; }
+
+/* Footer Grid */
+.footer-grid {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 25px 40px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.footer-grid a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 15px;
+}
+.footer-grid a:hover { text-decoration: underline; }
