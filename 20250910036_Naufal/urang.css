@@ -191,3 +191,13 @@ footer a { color: #e7f0f2; }
 @media (max-width: 800px) {
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* ===== Tambahan: daftar MODUL 01-10 di Laporan Praktikum ===== */
+.daftar-modul { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; margin-top: 8px; }
+.daftar-tugas .daftar-modul li { display: block; padding: 0; border-bottom: 0; }
+.daftar-modul a {
+  display: block; text-align: center; padding: 7px 10px;
+  border: 1px solid var(--garis); border-radius: 8px;
+  background: #eef3f4; text-decoration: none; font-weight: 600; font-size: 14px;
+}
+.daftar-modul a:hover { background: var(--emas); border-color: var(--emas); color: var(--hutan); }

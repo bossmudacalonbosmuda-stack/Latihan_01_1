@@ -67,17 +67,17 @@
             <li>
               <span class="tahun">... - 2025</span>
               <strong>Sekolah Menengah Atas / sederajat</strong>
-              <small>Isi nama sekolahmu di sini</small>
+              <small>SMAN 1 KUNINGAN</small>
             </li>
             <li>
               <span class="tahun">... - ...</span>
               <strong>Sekolah Menengah Pertama</strong>
-              <small>Isi nama sekolahmu di sini</small>
+              <small>SMPN 1 KUNINGAN</small>
             </li>
             <li>
               <span class="tahun">... - ...</span>
               <strong>Sekolah Dasar</strong>
-              <small>Isi nama sekolahmu di sini</small>
+              <small>SDN 1 CIPORANG</small>
             </li>
           </ul>
         </section>
@@ -118,12 +118,32 @@
                 <tr><th>Hari</th><th>Jam</th><th>Mata Kuliah</th><th>Ruang</th></tr>
               </thead>
               <tbody>
-                <tr data-hari="1"><td>Senin</td><td>08.00 - 10.30</td><td>Desain WEB</td><td>Lab Komputer</td></tr>
-                <tr data-hari="2"><td>Selasa</td><td>10.30 - 12.00</td><td>Kalkulus 1</td><td>Ruang 201</td></tr>
-                <tr data-hari="3"><td>Rabu</td><td>13.00 - 15.30</td><td>Arsitektur dan Organisasi Komputer</td><td>Ruang 202</td></tr>
-                <tr data-hari="4"><td>Kamis</td><td>08.00 - 10.30</td><td>Analisis dan Perancangan Sistem Informasi</td><td>Ruang 203</td></tr>
-                <tr data-hari="5"><td>Jumat</td><td>09.00 - 11.00</td><td>Pengantar Sistem Informasi</td><td>Ruang 201</td></tr>
-              </tbody>
+                <tbody>
+      <tbody>
+      <!-- Senin (2 mata kuliah) -->
+      <tr data-hari="1"><td rowspan="2">Senin</td><td>13:00 - 14:35</td><td>Riset Oprasi</td><td>Ruang H</td></tr>
+      <tr data-hari="1"><td>14:40 - 16:15</td><td>Pemograman Dasar</td><td>Ruang I</td></tr>
+
+      <!-- Selasa (3 mata kuliah) -->
+      <tr data-hari="2"><td rowspan="3">Selasa</td><td>08:00 - 09:35</td><td>Praktikum Analisis Perancangan Sistem Informasi</td><td>Lab Multimedia</td></tr>
+      <tr data-hari="2"><td>09:40 - 11:15</td><td>Statistika Data</td><td>Ruang K</td></tr>
+      <tr data-hari="2"><td>14:40 - 16:15</td><td>Praktikum Pemograman Dasar</td><td>Ruang RPL</td></tr>
+
+      <!-- Rabu (2 mata kuliah) -->
+      <tr data-hari="3"><td rowspan="2">Rabu</td><td>10:40 - 12:05</td><td>Analisis Perancangan Sistem Informasi</td><td>Ruang E</td></tr>
+      <tr data-hari="3"><td>13:00 - 14:35</td><td>Kalkulus</td><td>Ruang I</td></tr>
+
+      <!-- Kamis (3 mata kuliah) -->
+      <tr data-hari="4"><td rowspan="3">Kamis</td><td>08:00 - 09:35</td><td>Praktikum Web Desain</td><td>Ruang Multimedia</td></tr>
+      <tr data-hari="4"><td>09:40 - 11:15</td><td>English Communication for IT</td><td>Ruang A</td></tr>
+      <tr data-hari="4"><td>13:00 - 14:35</td><td>Web Desain</td><td>Ruang C</td></tr>
+
+      <!-- Jumat (3 mata kuliah) -->
+      <tr data-hari="5"><td rowspan="3">Jumat</td><td>08:00 - 10:05</td><td>Analisis Proses Bisnis</td><td>Ruang I</td></tr>
+      <tr data-hari="5"><td>13:00 - 14:35</td><td>Praktikum Statistika Data</td><td>Lab Multimedia</td></tr>
+      <tr data-hari="5"><td>15:30 - 17:05</td><td>Arsitektur Komputer dan Sistem Operasi</td><td>Ruang R</td></tr>
+    </tbody>
+    </tbody>
             </table>
           </div>
         </section>
@@ -133,8 +153,23 @@
           <ul class="daftar-tugas">
             <li><a href="profil_keluarga.html">Web Profil Keluarga</a><small>Desain WEB, HTML5, tabel, dan form</small></li>
             <li><a href="#beranda">Web Profil Diri (halaman ini)</a><small>Desain WEB, GitHub Pages</small></li>
-            <li><span>Laporan Praktikum Modul 1</span><small>Desain WEB, HTML</small></li>
-            <li><span>Tugas Modul 2</span><small>Desain WEB, Git</small></li>
+            <li class="laporan">
+              <span>Laporan Praktikum</span>
+              <small>Desain WEB</small>
+              <ul class="daftar-modul">
+                <li><a href="assets/laporan/modul-01.pdf" target="_blank" rel="noopener">MODUL 01</a></li>
+                <li><a href="assets/laporan/modul-02.pdf" target="_blank" rel="noopener">MODUL 02</a></li>
+                <li><a href="assets/laporan/modul-03.pdf" target="_blank" rel="noopener">MODUL 03</a></li>
+                <li><a href="assets/laporan/modul-04.pdf" target="_blank" rel="noopener">MODUL 04</a></li>
+                <li><a href="assets/laporan/modul-05.pdf" target="_blank" rel="noopener">MODUL 05</a></li>
+                <li><a href="assets/laporan/modul-06.pdf" target="_blank" rel="noopener">MODUL 06</a></li>
+                <li><a href="assets/laporan/modul-07.pdf" target="_blank" rel="noopener">MODUL 07</a></li>
+                <li><a href="assets/laporan/modul-08.pdf" target="_blank" rel="noopener">MODUL 08</a></li>
+                <li><a href="assets/laporan/modul-09.pdf" target="_blank" rel="noopener">MODUL 09</a></li>
+                <li><a href="assets/laporan/modul-10.pdf" target="_blank" rel="noopener">MODUL 10</a></li>
+              </ul>
+            </li>
+            <li><a href="assets/tugas/tugas-modul-02.pdf" target="_blank" rel="noopener">Tugas Modul 2</a><small>Desain WEB, Git</small></li>
           </ul>
         </section>
 
